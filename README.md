@@ -1,6 +1,10 @@
 # hsms
 
-Hardware Security Module (HSM) simulator.
+A simple Hardware Security Module ([HSM](https://en.wikipedia.org/wiki/Hardware_security_module)) simulator. 
+The list of supported commands is:
+
+Only the double-length key 3DES operations are supported.
+
 
 ## To use:
 ```javascript
