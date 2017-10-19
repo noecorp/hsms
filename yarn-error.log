@@ -1,0 +1,69 @@
+Arguments: 
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add babel-register
+
+PATH: 
+  /home/tim/bin:/home/tim/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/tim/dev/android-studio/jre/bin/
+
+Yarn version: 
+  1.2.1
+
+Node version: 
+  8.6.0
+
+Platform: 
+  linux x64
+
+npm manifest: 
+  {
+    "name": "hsmsim",
+    "version": "0.1.0",
+    "description": "Hardware Security Module simulator",
+    "main": "hsm.js",
+    "scripts": {
+      "test": "ava"
+    },
+    "repository": "https://github.com/timgabets/hsmsim",
+    "keywords": [
+      "HSM",
+      "Hardware",
+      "Security",
+      "Thales"
+    ],
+    "ava": {
+      "files": [
+        "tests/*.js"
+      ],
+      "source": [
+        "**/*.{js}"
+      ],
+      "concurrency": 5,
+      "failFast": true,
+      "failWithoutAssertions": false,
+      "powerAssert": false,
+      "require": [
+        "babel-register"
+      ],
+      "babel": "inherit"
+    },
+    "author": {
+      "name": "Tim Gabets",
+      "email": "tim@gabets.ru",
+      "url": "http://gabets.ru/"
+    },
+    "license": "LGPL-2.1",
+    "devDependencies": {
+    },
+    "dependencies": {
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com registry.yarnpkg.com:443
+      at errnoException (dns.js:53:10)
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:95:26)
