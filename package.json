@@ -1,0 +1,45 @@
+{
+  "name": "hsmsim",
+  "version": "0.1.0",
+  "description": "Hardware Security Module simulator",
+  "main": "hsm.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "repository": "https://github.com/timgabets/hsmsim",
+  "keywords": [
+    "HSM",
+    "Hardware",
+    "Security",
+    "Thales"
+  ],
+  "ava": {
+    "files": [
+      "tests/*.js"
+    ],
+    "source": [
+      "**/*.{js}"
+    ],
+    "concurrency": 5,
+    "failFast": true,
+    "failWithoutAssertions": false,
+    "powerAssert": false,
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "author": {
+    "name": "Tim Gabets",
+    "email": "tim@gabets.ru",
+    "url": "http://gabets.ru/"
+  },
+  "license": "LGPL-2.1",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "jasmine": "^2.8.0"
+  },
+  "dependencies": {
+    "atm-state-levels": "^1.0.6"
+  }
+}
